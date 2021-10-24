@@ -1,0 +1,1032 @@
+What is Programming?
+Just like we use Hindi or English to communicate with each other, we use a Programming language to communicate with the computer.
+
+Programming is a way to instruct the computer to perform various tasks.
+
+What is Python?
+Python is a simple and easy-to-understand language that feels like reading simple English. This Pseudo code nature of Python makes it easy to learn and understandable for beginners.
+
+Features of Python:
+Easy to understand = Less development time
+Free and open source
+High-level language
+Portable – works on Windows/Linux/Mac
++ Fun to work with :)
+Installation
+
+Python can be easily installed from python.org
+
+When you click on the download button, python can be installed right after you complete the setup by executing the file for your platform.
+
+Tip: Just install it like a game ☻
+Chapter 1: Modules, Comments & Pip
+Let’s write our very first python program.
+
+Create a file called hello.py and paste the below code into it
+
+print(“Hello World”)         # print is a function (more later)
+Execute this file (.py file) by typing python hello.py, and you will see Hello World printed on the screen.
+
+Modules
+A module is a file containing code written by somebody else (usually) which can be imported and used in our programs.
+
+Pip
+Pip is a package manager for python. You can use pip to install a module on your system.
+
+E.g., pip install flask (It will install flask module in your system)
+
+Types of modules
+There are two types of modules in Python:
+
+Built-in modules – Pre-installed in Python
+External modules – Need to install using pip
+Some examples of built-in modules are os, abc, etc.
+
+Some examples of external modules are TensorFlow, flask, etc.
+
+Using Python as a Calculator
+
+We can use python as a calculator by typing “python” + TO DO on the terminal. [It opens REPL or read evaluation print loop]
+
+
+
+ 
+Comments
+Comments are used to write something which the programmer does not want to execute.
+
+Comments can be used to mark the author's name, date, etc.
+
+Types of Comments:
+
+There are two types of comments in python,
+
+Single line comments – Written using # (pound/hash symbol)
+Multi-line comments – Written using ‘’’ Comment ‘’’ or “”” Comment “””.
+Chapter 1 – Practice Set
+Write a program to print Twinkle-Twinkle Little Star poem in python.
+Use REPL and print the table of 5 using it.
+Install an external module and use it to perform an operation of your interest.
+Write a python program to print the contents of a directory using os module. Search online for the function which does that.
+Label the program written in problem 4 with comments.
+
+
+ 
+Chapter 2 – Variables and Data Types
+A variable is a name given to a memory location in a program. For example
+
+a=30
+
+b=”Harry”
+
+c=71.22
+Variable – Container to store a value
+
+Keywords – Reserved words in Python
+
+Identifiers – class/function/variable name
+
+Data Types:
+Primarily there are the following data types in Python:
+
+Integers
+Floating point numbers
+Strings
+Booleans
+None
+Python is a fantastic language that automatically identifies the type of data for us.
+
+a = 71                                    #Identifies a as class<int>
+
+b = 88.44                              #Identifies b as class<float>
+
+name = “Harry”                  #Identifies name as class<Str>
+Rules for defining a variable name: (Also applicable to other identifiers)
+
+A variable name can contain alphabets, digits, and underscore.
+A variable name can only start with an alphabet and underscore.
+A variable can’t start with a digit.
+No white space is allowed to be used inside a variable name.
+Examples of few valid variable names,
+
+Harry, harry, one8, _akki, aakash, harry_bro, etc.
+
+
+
+ 
+Operators in Python
+The following are some common operators in Python:
+
+Arithmetic Operators (+, -, *, /, etc.)
+Assignment Operators (=, +=, -=, etc.)
+Comparison Operators (==, >=, <=, >, <, !=, etc.)
+Logical Operators (and, or, not)
+type() function and Typecasting
+
+type function is used to find the data type of a given variable in Python.
+
+a = 31
+
+type(a)                      #class<int>
+
+b = “31”
+
+type(b)                      #class<str>
+A number can be converted into a string and vice versa (if possible)
+
+There are many functions to convert one data type into another.
+
+Str(31)           # ”31” Integer to string conversion
+
+int(“32”)       # 32 String to int conversion
+
+float(32)       #32.0 Integer to float conversion
+… and so on
+
+Here “31” is a string literal, and 31 is a numeric literal.
+
+input() function
+
+This function allows the user to take input from the keyboard as a string.
+
+a = input(“Enter name”)               #if a is “harry”, the user entered harry
+Note: The output of the input function is always a string even if the number is entered by the user.
+
+Suppose if a user enters 34, then this 34 will automatically convert to “34” string literal.
+
+Chapter 2 – Practice Set
+Write a Python program to add two numbers.
+Write a Python program to find the remainder when a number is divided by Z(Integer).
+Check the type of the variable assigned using the input() function.
+Use a comparison operator to find out whether a given variable a is greater than b or not. (Take a=34 and b=80)
+Write a Python program to find the average of two numbers entered by the user.
+Write a Python program to calculate the square of a number entered by the user.
+
+
+ 
+Chapter 3 – Strings
+The string is a data type in Python.
+
+A string is a sequence of characters enclosed in quotes.
+
+We can primarily write a string in three ways:
+
+Single quoted strings : a = ‘harry’
+Double quoted strings : b = “harry”
+Triple quoted strings : c = ‘’’ harry ‘’’
+String Slicing:
+A string in Python can be sliced for getting a part of the string.
+
+Consider the following string:
+
+
+
+The index in a string starts from 0 to (length-1) in Python. To slice a string, we use the following syntax:
+
+
+
+Negative Indices: Negative indices can also be used as shown in the figure above. -1 corresponds to the (length-1) index, -2 to (length-2).
+
+Slicing with skip value
+
+We can provide a skip value as a part of our slice like this:
+
+word = “amazing”
+
+word[1:6:2]           # It will return ’mzn’
+
+
+ 
+Other advanced slicing techniques
+
+word = ‘amazing’
+
+word[:7] or word[0:7]      #It will return ‘amazing’
+
+word[0:] or word[0:7]      #It will return ‘amazing’
+String Functions
+Some of the most used functions to perform operations on or manipulate strings are:
+
+len() function : It returns the length of the string.
+len(‘harry’)               #Returns 5
+endswith(“rry”) : This function tells whether the variable string ends with the string “rry” or not. If string is “harry”, it returns for “rry” since harry ends with rry.
+count(“c”) : It counts the total number of occurrences of any character.
+capitalize() : This function capitalizes the first character of a given string.
+find(word) : This function finds a word and returns the index of first occurrence of that word in the string.
+replace(oldword, newword) : This function replaces the old word with the new word in the entire string.
+Escape Sequence Characters:
+Sequence of characters after backslash ‘\’ [Escape Sequence Characters]
+
+Escape Sequence Characters comprises of more than one character but represents one character when used within the string.
+
+Examples: \n (new line), \t (tab), \’ (single quote), \\ (backslash), etc.
+
+Chapter 3 – Practice Set
+Write a Python program to display a user-entered name followed by Good Afternoon using input() function.
+Write a program to fill in a letter template given below with name and date.
+letter = ‘’’ Dear <|NAME|>,
+
+                        You are selected!
+
+                        <|DATE|>
+Write a program to detect double spaces in a string.
+Replace the double spaces from problem 3 with single spaces.
+Write a program to format the following letter using escape sequence characters.
+letter = “Dear Harry, This Python course in nice. Thanks!!”
+
+
+ 
+Chapter 4 – Lists and Tuples
+Python Lists are containers to store a set of values of any data type.
+
+friends = [‘Apple’, ‘Akash’, ‘Rohan’, 7, False]
+The list can contain different types of elements such as int, float, string, Boolean, etc. Above list is a collection of different types of elements.
+
+List Indexing
+A list can be index just like a string.
+
+L1 = [7, 9, ‘harry’]
+
+L1[0] – 7
+
+L1[1] – 9
+
+L1[70] – Error
+
+L1[0:2] – [7,9]         (This is known as List Slicing)
+List Methods
+Consider the following list:
+
+L1 = [1, 8, 7, 2, 21, 15]
+sort() – updates the list to [1,2,7,8,15,21]
+reverse() – updates the list to [15,21,2,7,8,1]
+append(8) – adds 8 at the end of the list
+insert(3,8) – This will add 8 at 3 index
+pop(2) – It will delete the element at index 2 and return its value
+remove(21) – It will remove 21 from the last
+
+
+ 
+Tuples in Python:
+A tuple is an immutable (can’t change or modified) data type in Python.
+
+a = ()              #It is an example of empty tuple
+
+a = (1,)           #Tuple with only one element needs a comma
+
+a = (1, 7, 2)   #Tuple with more than one element
+Once defined, tuple elements can’t be manipulated or altered.
+
+Tuple methods:
+
+Consider the following tuple,
+
+a = (1, 7, 2)
+count(1) – It will return the number of times 1 occurs in a.
+index(1) – It will return the index of the first occurrence of 1 in a.
+Chapter 4 – Practice Set
+Write a program to store seven fruits in a list entered by the user.
+Write a program to accept the marks of 6 students and display them in a sorted manner.
+Check that a tuple cannot be changed in Python.
+Write a program to sum a list with 4 numbers.
+Write a program to count the number of zeros in the following tuple:
+a = (7, 0, 8, 0, 0, 9)
+
+
+ 
+Chapter 5 – Dictionary and Sets
+Dictionary is a collection of key-value pairs.
+
+Syntax:
+
+''' a = {“key”: “value”,
+“harry”: “code”,
+“marks” : “100”,
+“list”: [1,2,9]}
+a[“key”]	# Prints value
+a[“list”] 	# Prints [1,2,9] '''
+Properties of Python Dictionaries
+It is unordered
+It is mutable
+It is indexed
+It cannot contain duplicate keys
+Dictionary Methods
+Consider the following dictionary,
+
+a = {“name”: “Harry”,
+	“from”: “India”,
+	“marks”: [92,98,96]}
+items() : returns a list of (key,value) tuple.
+keys() : returns a list containing dictionary’s keys.
+update({“friend”: “Sam”}) : updates the dictionary with supplied key-value pairs.
+get(“name”) : returns the value of the specified keys (and value is returned e.g., “Harry” is returned here)
+More methods are available on docs.python.org
+
+
+
+ 
+Sets in Python
+Set is a collection of non-repetitive elements.
+
+S= Set()          # No repetition allowed!
+
+S.add(1)
+
+S.add(2)
+
+# or Set = {1,2}
+If you are a programming beginner without much knowledge of mathematical operations on sets, you can simply look at sets in python as data types containing unique values.
+
+Properties of Sets
+Sets are unordered # Elements order doesn’t matter
+Sets are unindexed # Cannot access elements by index
+There is no way to change items in sets
+Sets cannot contain duplicate values
+Operations on Sets
+Consider the following set:
+
+S = {1,8,2,3}
+Len(s) : Returns 4, the length of the set
+remove(8) : Updates the set S and removes 8 from S
+pop() : Removes an arbitrary element from the set and returns the element removed.
+clear() : Empties the set S
+union({8, 11}) : Returns a new set with all items from both sets. #{1,8,2,3,11}
+intersection({8, 11}) : Returns a set which contains only items in both sets. #{8}
+
+
+Chapter 5 – Practice Set
+Write a program to create a dictionary of Hindi words with values as their English translation. Provide the user with an option to look it up!
+Write a program to input eight numbers from the user and display all the unique numbers (once).
+Can we have a set with 18(int) and “18”(str) as a value in it?
+What will be the length of the following set S:
+S = Set()
+
+S.add(20)
+
+S.add(20.0)
+
+S.add(“20”)
+What will be the length of S after the above operations?
+
+S = {}, what is the type of S?
+Create an empty dictionary. Allow 4 friends to enter their favorite language as values and use keys as their names. Assume that the names are unique.
+If the names of 2 friends are the same; what will happen to the program in Program 6?
+If the languages of two friends are the same; what will happen to the program in Program 6?
+Can you change the values inside a list which is contained in set S
+S = {8, 7, 12, “Harry”, [1, 2]}
+
+
+ 
+Chapter 6 – Conditional Expressions
+Sometimes we want to play pubg on our phone if the day is Sunday.
+
+Sometimes we order Ice-cream online if the day is sunny.
+
+Sometimes we go hiking if our parents allow.
+
+All these are decisions that depend on the condition being met.
+
+In python programming too, we must be able to execute instructions on a condition(s) being met. This is what conditions are for!
+
+If else and elif in Python
+If else and elif statements are a multiway decision taken by our program due to certain conditions in our code.
+
+Syntax:
+
+'''
+if (condition1):		// if condition 1 is true
+	print(“yes”)
+elif (condition2):		// if condition 2 is true
+	print(“No”)
+else:				// otherwise
+	print(“May be”)
+'''
+Code example:
+
+a = 22
+if (a>9):
+    print(“Greater”)
+else:
+    print(“lesser”)
+Quick Quiz: Write a program to print yes when the age entered by the user is greater than or equal to 18.
+
+
+
+ 
+Relational Operators
+Relational operators are used to evaluate conditions inside if statements. Some examples of relational operators are:
+
+= = -> equals
+
+>=  -> greater than/equal to
+
+<=, etc.
+Logical Operators
+In python, logical operators operate on conditional statements. Example:
+
+and -> true if both operands are true else false
+
+or -> true if at least one operand is true else false
+
+not -> inverts true to false and false to true
+elif clause
+elif in python means [else if]. If statement can be chained together with a lot of these elif statements followed by an else statement.
+
+'''
+if (condition1):
+    #code
+elif (condition 2):
+    #code
+elif (condition 2):
+    #code
+….
+else:
+    #code    '''
+The above ladder will stop once a condition in an if or elif is met.
+Important Notes:
+
+There can be any number of elif statements.
+Last else is executed only if all the conditions inside elifs fail.
+Chapter 6 – Practice Set
+Write a program to find the greatest of four numbers entered by the user.
+Write a program to find out whether a student is pass or fail if it requires a total of 40% and at least 33% in each subject to pass. Assume 3 subjects and take marks as an input from the user.
+A spam comment is defined as a text containing the following keywords:
+“make a lot of money”, “buy now”, “subscribe this”, “click this”. Write a program to detect these spams.
+
+Write a program to find whether a given username contains less than 10 characters or not.
+Write a program that finds out whether a given name is present in a list or not.
+Write a program to calculate the grade of a student from his marks from the following scheme:
+90-100	Ex
+80-90	A
+70-80	B
+60-70	C
+50-60	D
+<50	F
+Write a program to find out whether a given post is talking about “Harry” or not.
+
+
+ 
+Chapter 7 – Loops in Python
+Sometimes we want to repeat a set of statements in our program. For instance: Print 1 to 1000
+
+Loops make it easy for a programmer to tell the computer, which set of instructions to repeat, and how!
+
+Types of loops in Python
+Primarily there are two types of loops in Python
+
+While loop
+For loop
+We will look into this one by one!
+
+While loop
+
+The syntax of a while loop looks like this:
+
+''' while condition:
+    #Body of the loop '''
+The block keeps executing until the condition is true/false
+In while loops, the condition is checked first. If it evaluates to true, the body of the loop is executed, otherwise not!
+
+If the loop is entered, the process of condition check and execution is continued until the condition becomes false.
+
+Quick Quiz: Write a program to print 1 to 50 using a while loop.
+
+An Example:
+
+i = 0
+while i<5:
+    print(“Harry”)
+    i = i+1
+(Above program will print Harry 5 times)
+
+Note: if the condition never becomes false, the loop keeps getting executed.
+
+
+
+ 
+Quick Quiz: Write a program to print the content of a list using while loops.
+
+For loop
+A for loop is used to iterate through a sequence like a list, tuple, or string (iterables)
+
+The syntax of a for loop looks like this:
+
+l = [1, 7, 8]
+for item in l:
+	print(item)
+(Above program will print 1, 7, and 8)
+
+Range function in Python
+The range function in python is used to generate a sequence of numbers.
+
+We can also specify the start, stop, and step-size as follows:
+
+            range(start, stop, step_size)
+
+step size is usually not used with range()
+An example demonstrating range() function
+
+for i in range(0, 7):		#range(7) can also be used
+	print(i)		#prints 0 to 6
+For loop with else
+An optional else can be used with a for loop if the code is to be executed when the loop exhausts.
+
+Example:
+
+l = [1, 7, 8]
+for item in l:
+	print(item)
+else:
+	print(“Done”)	#This is printed when the loop exhausts!
+Output:
+
+1
+
+7
+
+8
+
+Done
+The break statement
+‘break’ is used to come out of the loop when encountered. It instructs the program to – Exit the loop now.
+
+Example:
+
+for i in range(0, 80):
+	print(i)	#This will print 0, 1, 2 and 3
+	if i == 3:
+		break
+The continue statement
+‘continue’ is used to stop the current iteration of the loop and continue with the next one. It instructs the program to “skip this iteration.”
+
+Example:
+
+for i in range(4):
+	print(“printing”)
+	if i == 2:	#if i is 2, the iteration is skipped
+		continue
+	print(i)
+
+
+ 
+pass statement
+pass is a null statement in python. It instructs to “Do nothing.”
+
+Example:
+
+l = [1, 7, 8]
+for item in l:
+	pass		#without pass, the program will throw an error
+Chapter 7 – Practice Set
+Write a program to print the multiplication table of a given number using for loop.
+Write a program to greet all the person names stored in a list l1 and which starts with S.
+l1 = [“Harry”, “Sohan”, “Sachin”, “Rahul”]
+Attempt problem 1 using a while loop.
+Write a program to find whether a given number is prime or not.
+Write a program to find the sum of first n natural numbers using a while loop.
+Write a program to calculate the factorial of a given number using for loop.
+Write a program to print the following star pattern.
+    *
+
+  ***  
+
+***** for n=3
+Write a program to print the following star pattern:
+*
+
+**
+
+*** for n = 3
+Write a program to print the following star pattern:
+* * *
+*   *             #For n=3
+* * * 
+   10. Write a program to print the multiplication table of n using for loop in reversed order.
+
+
+
+ 
+Chapter 8 – Functions and Recursions
+A function is a group of statements performing a specific task.
+
+When a program gets bigger in size and its complexity grows, it gets difficult for a programmer to keep track of which piece of code is doing what!
+
+A function can be reused by the programmer in a given program any number of times.
+
+Example and Syntax of a function
+
+The syntax of a function looks as follows:
+
+def func1():
+	print(“Hello”)
+This function can be called any number of times, anywhere in the program.
+
+Function call
+
+Whenever we want to call a function, we put the name of the function followed by parenthesis as follows:
+
+func1()          #This is called function call
+Function definition
+
+The part containing the exact set of instructions that are executed during the function call.
+
+Quick Quiz: Write a program to greet a user with “Good day” using functions.
+
+Types of functions in Python
+There are two types of functions in Python:
+
+Built-in functions #Already present in Python
+User-defined functions #Defined by the user
+Examples of built-in function includes len(), print(), range(), etc.
+
+The func1() function we defined is an example of a user-defined function.
+
+Functions with arguments
+
+A function can accept some values it can work with. We can put these values in the parenthesis. A function can also return values as shown below:
+
+def greet(name):
+	gr = “Hello” + name
+	return gr
+a = greet(“Harry”) #“Harry” is passed to greet in name
+
+# a will now contain “Hello Harry”
+
+
+ 
+Default Parameter Value
+
+We can have a value as the default argument in a function.
+
+If we specify name = “stranger” in the line containing def, this value is used when no argument is passed.
+
+For Example:
+
+def greet(name=’stranger’):
+	#function body
+greet()                       #Name will be ‘stranger’ in function body(default)
+
+greet(“Harry”)        #Name will be “Harry” in function body(passed)
+Recursion
+Recursion is a function which calls itself.
+
+It is used to directly use a mathematical formula as a function. For example:
+
+factorial(n) = n * factorial(n-1)
+This function can be defined as follows:
+
+def factorial(n):
+	if i == 0 or i == 1 : #Base condition which doesn’t call the function any further
+		return i
+	else:
+		return n*factorial(n-1) #Function calling itself
+This works as follows:
+
+
+
+The programmer needs to be extremely careful while working with recursion to ensure that the function doesn’t infinitely keep calling itself.
+
+Recursion is sometimes the most direct way to code an algorithm.
+
+
+
+ 
+Chapter 8 – Practice Set
+Write a program using the function to find the greatest of three numbers.
+Write a python program using the function to convert Celsius to Fahrenheit.
+How do you prevent a python print() function to print a new line at the end?
+Write a recursive function to calculate the sum of first n natural numbers.
+Write a python function to print the first n lines of the following pattern.
+***
+
+**       #For n = 3
+
+*
+Write a python function that converts inches to cms.
+Write a python function to remove a given word from a list and strip it at the same time.
+Write a python function to print the multiplication table of a given number.
+Project 1: Snake, Water, Gun Game
+We all have played snake, water gun game in our childhood. If you haven’t, google the rules of this game and write a Python program capable of playing this game with the user.
+
+
+
+ 
+Chapter 9 – File I/O
+The random access memory is volatile, and all its contents are lost once a program terminates.
+
+In order to persist the data forever, we use files.
+
+A file is data stored in a storage device. A python program can talk to the file by reading content from it and writing content to it.
+
+
+
+Types of Files
+
+There are 2 types of files:
+
+Text files (.txt, .c, etc)
+Binary files (.jpg, .dat, etc)
+Python has a lot of functions for reading, updating, and deleting files.
+
+Opening a file
+
+Python has an open() function for opening files. It takes 2 parameters: filename and mode.
+
+open(“this.txt”, “r”)
+Here, “this” is the file name and “r” is the mode of opening (read mode)
+
+Reading a file in Python
+
+f = open(“this.txt”, “r”)     #Opens the file in r mode
+
+text = f.read()          #Read its content
+
+print(text)     #Print its contents
+
+f.close()         #Close the fie
+We can also specify the number of characters in read() function:
+
+f.read(2)       #Reads first 2 characters
+
+
+ 
+Other methods to read the file
+
+We can also use f.readline() function to read one full line at a time.
+
+f.readline()               #Reads one line from the file
+Modes of opening a file
+
+r – open for reading
+
+w – open for writing
+
+a – open for appending
+
++ -> open for updating
+
+‘rb’ will open for read in binary mode
+
+‘rt’ will open for read in text mode
+
+Writing Files in Python
+
+In order to write to a file, we first open it in write or append mode, after which, we use the python’s f.write() method to write to the file!
+
+f = open(“this.txt”, “w”)
+
+f.write(“This is nice”)        #Can be called multiple times
+
+f.close()
+With statement
+
+The best way to open and close the file automatically is the “with” statement.
+
+with open(“this.txt”) as f:
+
+            f.read()
+#There is no need to write f.close() as it is done automatically
+
+Chapter 9 – Practice Set
+Write a program to read the text from a given file, “poems.txt” and find out whether it contains the word ‘twinkle’.
+The game() function in a program lets a user play a game and returns the score as an integer. You need to read a file “Hiscore.txt” which is either blank or contains the previous Hi-score. You need to write a program to update the Hi-score whenever game() breaks the Hi-Score.
+Write a program to generate multiplication tables from 2 to 20 and write it to the different files. Place these files in a folder for a 13- year old boy.
+A file contains the word “Donkey” multiple times. You need to write a program which replaces this word with ###### by updating the same file.
+Repeat program 4 for a list of such words to be censored.
+Write a program to mine a log file and find out whether it contains ‘python’.
+Write a program to find out the line number where python is present from question 6.
+Write a program to make a copy of a text file “this.txt.”
+Write a program to find out whether a file is identical and matches the content of another file.
+Write a program to wipe out the contents of a file using python.
+Write a python program to rename a file to “renamed_by_python.txt.”
+
+
+ 
+Chapter 10 – Object-Oriented Programming
+Solving a problem by creating objects is one of the most popular approaches in programming. This is called object-oriented programming.
+
+This concept focuses on using reusable code. (Implements DRY principle)
+
+Class
+A class is a blueprint for creating objects.
+
+
+
+The syntax of a class looks like this:
+
+Class Employee:		[classname is written in PascalCase]
+	#methods & variables
+Object
+An object is an instantiation of a class. When class is defined, a template(info) is defined. Memory is allocated only after object instantiation.
+
+Objects of a given class can invoke the methods available to it without revealing the implementation details to the user.     #Abstraction & Encapsulation!
+
+Modelling a problem in OOPs
+
+We identify the following in our problem
+
+Noun -> Class -> Employee
+
+Adjective -> Attributes -> name,age,salary
+
+Verbs -> Methods -> getSalary(), increment()
+
+
+
+ 
+Class Attributes
+
+An attribute that belongs to the class rather than a particular object.
+
+Example:
+
+Class Employee:
+	company = “Google” 	#Specific to each class
+harry = Employee()	#Object instantiation
+harry.company
+Employee.company = “YouTube”	#changing class attribute
+Instance Attributes
+
+An attribute that belongs to the Instance (object)
+
+Assuming the class from the previous example:
+
+harry.name = “Harry”
+harry.salary = “30K”	#Adding instance attributes
+Note: Instance attributes take preference over class attributes during assignment and retrieval.
+
+harry.attribute1  :
+
+Is attribute1 present in the object?
+Is attribute1 present in class?
+‘self’ parameter
+
+self refers to the instance of the class.
+
+It is automatically passed with a function call from an object.
+
+harry.getSalary()
+here, self is harry, and the above line of code is equivalent to Employee.getSalary(harry)
+
+This function getsalary is defined as:
+
+class Employee:
+	company = “Google”
+	def getSalary(self):
+		print(“Salary is not there”)
+
+
+ 
+Static method
+
+Sometimes we need a function that doesn’t use the self-parameter. We can define a static method like this:
+
+@staticmethod	#decorator to mark greet as a static method
+def greet():
+	print(“Hello user”)
+__init__() constructor
+
+__init__() is a special method which runs as soon as the object is created.
+
+__init__() method is also known as constructor.
+
+It takes self-argument and can also take further arguments.
+
+For Example:
+
+class Employee:
+	def __init__(self,name):
+		self.name = name
+	def getSalary(self):
+		#Some code…
+harry = Employee(“Harry”)	#Object can be instantiated using constructor like this!
+Chapter 10 – Practice Set
+Create a class programmer for storing information of a few programmers working at Microsoft.
+Write a class calculator capable of finding square, cube, and the square root of a number.
+Create a class with a class attribute a; create an object from it and set a directly using object.a=0 Does this change the class attribute?
+Add a static method in problem 2 to greet the user with hello.
+Write a class Train which has methods to book a ticket, get status(no of seats), and get fare information of trains running under Indian Railways.
+Can you change the self parameter inside a class to something else (say ‘harry’)? Try changing self to ‘slf’ or ‘harry’ and see the effects.
+
+
+ 
+Chapter 11 – Inheritance & more on OOPs
+Inheritance is a way of creating a new class from an existing class.
+
+Syntax:
+
+class Emoloyee:	#Base Class
+	#Code
+class Programmer(Employee):	#Derived or child class
+	#Code
+We can use the methods and attributes of Employee in Programmer object.
+
+Also, we can overwrite or add new attributes and methods in the Programmer class.
+
+Type of Inheritance
+Single inheritance
+Multiple inheritance
+Multilevel inheritance
+Single Inheritance
+
+Single inheritance occurs when a child class inherits only a single parent class.
+
+Base -> Derived
+
+Multiple Inheritance
+
+Multiple inheritances occurs when the child class inherits from more than one parent class.
+
+
+
+Multilevel Inheritance
+
+When a child class becomes a parent for another child class.
+
+
+
+
+
+ 
+Super() method
+
+Super method is used to access the methods of a superclass in the derived class.
+
+super().__init__()  #Calls constructor of the base class
+Class methods
+
+A class method is a method which is bound to the class and not the object of the class.
+
+@classmethod decorator is used to create a class method.
+
+Syntax to create a class method:
+
+@classmethod
+def (cls, p1, p2):
+	#code
+@property decorators
+
+Consider the following class
+
+class Employee:
+	@property 
+	def name(self):
+		return self.ename
+if e = Employee() is an object of class employee, we can print (e.name) top print the ename/call name() function.
+
+@.getters and @.setters
+
+The method name with @property decorator is called getter method.
+
+We can define a function + @name.setter decorator like below:
+
+@name.setter
+def name(self, value):
+	self.ename = value
+Operator overloading in Python
+
+Operators in python can be overloaded using dunder methods.
+
+These methods are called when a given operator is used on the objects.
+
+Operators in python can be overloaded using the following methods:
+
+p1 + p2 -> p1.__add__(p2)
+
+p1 – p2 -> p1.__sub__(p2)
+
+p1 * p2 -> p1.__mul__(p2)
+
+p1 / p2 -> p1.__truediv__(p2)
+
+p1 // p2 -> p1.__floordiv__(p2)
+Other dunder/magic methods in Python
+
+
+
+ 
+__str__() -> used  to set what gets displayed upon calling str(obj)
+
+__len__() -> used to set what gets displayed upon calling .__len__() or len(obj)
+Chapter 11 – Practice Set
+Create a class C-2d vector and use it to create another class representing a 3-d vector.
+Create a class of pets from a class Animals and further create class Dog from Pets. Add a method bark to class Dog.
+Create a class Employee and add salary and increment properties to it.
+Write a method SalaryAfterIncrement method with a @property decorator with a setter which changes the value of increment based on the salary.
+
+Write a class complex to represent complex numbers, along with overloaded operators + and * which adds and multiplies them.
+Write a class vector representing a vector of n dimension. Overload the + and * operator which calculates the sum and the dot product of them.
+Write __str__() method to print the vector as follows:
+7i + 8j + 10k
+Assume vector of dimension 3 for this problem.
+
+Override the __len__() method on vector of problem 5 to display the dimension of the vector.
+Project 2: Snake, Water, Gun Game
+We are going to write a program that generates a random number and asks the user to guess it.
+
+If the player’s guess is higher than the actual number, the program displays “Lower number please”. Similarly, if the user’s guess is too low, the program prints “higher number please”.
+
+When the user guesses the correct number, the program displays the number of guesses the player used to arrive at the number.
+
+Hint: Use the random module
+
+Download all the Notes here
